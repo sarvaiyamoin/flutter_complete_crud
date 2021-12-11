@@ -80,7 +80,7 @@ class _EditScreenState extends State<EditScreen> {
       ),
       body: _isLoading
           ? const Center(
-              child: CircularProgressIndicator(),
+              child: CircularProgressIndicator.adaptive(),
             )
           : Form(
               key: _form,
