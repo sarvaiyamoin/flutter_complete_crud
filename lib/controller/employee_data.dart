@@ -38,6 +38,8 @@ class EmployeeData extends GetxController {
       final extratedData = jsonDecode(response.body) as Map<String, dynamic>;
       var loadedEmployee = RxList<Employee>([]);
       // List<Employee> loadedEmployee = [];
+// List<Employee> employeeFromJson(String str) => List<Employee>.from(
+//           json.decode(str).map((x) => Employee.fromJson(x)));
 
       extratedData.forEach((employeeId, employeeData) {
         loadedEmployee.add(Employee(
